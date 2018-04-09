@@ -1,0 +1,42 @@
+= Tutorial Title Name
+
+Author: Your Name Here
+
+== Intro
+
+Describe the goals and purpose of the tutorial here.
+
+== Prerequisites
+
+The "*" is a bulleted list.
+
+* VirtualBox
+* Kali Virtual Machine
+
+== Instructions
+
+Guide the person through the steps. Starting a line with a period is an automatically numbered list.
+
+. Step one.
+. Step two.
+. Step three. Use "+" and the  backtick character to add additional command.
++
+```
+sudo su
+```
+. Step four. Use the following syntax to include screenshots or other images.
++
+image::blue-rectangle.png[]
+. Step five. Compile with the following command:
++
+```
+asciidoctor-pdf tutorial.adoc
+```
+
+== Challenge
+
+Provide some meaningful ways for the learner to apply their knowledge in a new way.
+
+== Reflection
+
+Provide some thought questions that help the learner make sense of how the tutorial fits in the bigger picture.

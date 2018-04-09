@@ -1,0 +1,41 @@
+= Wildcat Tutorials
+:Author: Dr. Jim Marquardson, Editor, Northern Michigan University
+:Revision: v.01
+:Date: April 9, 2018
+:doctype: book
+:toc:
+:numbered:
+
+[preface]
+= About this Book
+
+This book is a collaborative effort by students at Northern Michigan University. The tutorials are licensed using the Creative Commons Attribution Share Alike 4.0. These tutorials can be freely distributed, but please attribute the authors.
+
+Some of the topics include tutorials regarding network security. The tutorials are presented for informational and instructional purposes only. These tutorials should only be conducted on systems for which you have authorization.
+
+:imagesdir: Bordine
+include::Bordine/tutorial.adoc[]
+
+:imagesdir: Cutino
+include::Cutino/tutorial.adoc[]
+
+:imagesdir: Dowell
+include::Dowell/tutorial.adoc[]
+
+:imagesdir: Hartland
+include::Hartland/tutorial.adoc[]
+
+:imagesdir: Hoff
+include::Hoff/tutorial.adoc[]
+
+:imagesdir: Holmes
+include::Holmes/tutorial.adoc[]
+
+:imagesdir: Latuszek
+include::Latuszek/tutorial.adoc[]
+
+:imagesdir: Miller
+include::Miller/tutorial.adoc[]
+
+:imagesdir: Moore
+include::Moore/tutorial.adoc[]

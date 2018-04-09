@@ -1,0 +1,11 @@
+*.pdf
+*.docx
+.vagrant
+*.pcap
+Thumbs.db
+
+# Ignore the LaTeX compilation crap
+*.aux
+*.synctex.gz
+*.log
+*.out
