@@ -1,10 +1,11 @@
 = Tutorial Title Name
 
-Author: Matt-put your name here
+Author: Matt Hoff
 
 == Intro
 
 Describe the goals and purpose of the tutorial here.
+
 
 == Prerequisites
 
