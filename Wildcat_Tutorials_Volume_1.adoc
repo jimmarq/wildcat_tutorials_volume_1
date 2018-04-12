@@ -13,6 +13,13 @@ This book is a collaborative effort by students at Northern Michigan University.
 
 Some of the topics include tutorials regarding network security. The tutorials are presented for informational and instructional purposes only. These tutorials should only be conducted on systems for which you have authorization.
 
+
+= Wildcat Tutorials
+
+The remainder of this book is divided into several chapters. Each chapter is a standalone tutorial that focuses on one tool or technique.
+
+:leveloffset: 1
+
 :imagesdir: Bordine
 include::Bordine/tutorial.adoc[]
 
