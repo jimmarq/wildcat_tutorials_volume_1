@@ -1,6 +1,6 @@
 = Tutorial Title Name
 
-Author: Your Name Here
+Author: Meredith Miller
 
 == Intro
 
