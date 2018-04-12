@@ -1,17 +1,15 @@
-= Tutorial Title Name
+= Refining Google Search for Information Gathering
 
 Author: Kayleigh Hartland
 
 == Intro
 
-Describe the goals and purpose of the tutorial here.
+This tutorial will teach how to use Google search engine to tailor results and find desired information easier and quicker than using the general search engine.
 
 == Prerequisites
 
-The "*" is a bulleted list.
-
-* VirtualBox
-* Kali Virtual Machine
+* Working Computer
+* Internet Connection
 
 == Instructions
 
