@@ -27,15 +27,26 @@ Guide the person through the steps. Starting a line with a period is an automati
 
 . Download and install vulnerable machine.
 . To install it just double click ova file in the folder to import virtual appliance
-. Click the "Reinitialize the MAC address of all network cards", sand then click import. 
+. Click the "Reinitialize the MAC address of all network cards", sand then click import.
 +
 image::Import.png[]
 . In Virtualbox make sure that the network adapter for both of the VMs are set to "Host-only Adapter"
 . In Virtualbox start the Kali Linux and the csec
+. For the remainder of this lab we will ignore csec and use the Kali VM for the rest of this challenge
 
-=== Game Time
+=== ???????
+. Open a terminal cause this is where most of the attacks will take place
+. First we have to find out csec's IP address
+  .. We will be using a ARP reconnaissance tool called "netdiscover"
+  .. Use the command *ifconfig* to find the IP address for the Kali VM and keep note of it.
+  .. Run this command to find the IP address for the csec VM:
+
+  netdiscover -i eth0 -r (Your IP Address and Subnet)
+
+
 
 . Step three. Use "+" and the  backtick character to add additional command.
+
 +
 ```
 sudo su
