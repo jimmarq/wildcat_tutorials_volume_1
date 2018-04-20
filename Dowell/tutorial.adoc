@@ -5,9 +5,9 @@ Author: The Coolest Person in the Milky Way.
 == Intro
 
 What's up my people. In this tutorial we are going to not only blow you mind. Like BOOOOOM.
-+
+
 image::explosion.png[]
-+
+
 <(O_o)>
 Boom. See that. That's your mind being blown by this tutorial. Just preparing you because its going to happen as we explore the awesomeSauceNessOfSuperMegaCMDPromptNetstatCommand.
 
