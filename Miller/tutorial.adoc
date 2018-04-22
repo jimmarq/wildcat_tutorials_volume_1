@@ -15,13 +15,13 @@ Learning Vim can take as long or as short as you want it to take. There are peop
 
 * How to exit Vim
 * How to save and exit Vim
-* Firts 3 levels of Vim adventures 
+* First 3 levels of Vim adventures 
 * Walking through the tutorial included in Vim
 
 == Prerequisites
 
 * Working Computer
-* Vim dowloaded
+* Vim downloaded
 * Internet Access
 
 == Instructions
@@ -30,22 +30,15 @@ Guide the person through the steps. Starting a line with a period is an automati
 
 . Go to https://www.vim.org/download.php and download the latest version of Vim. 
 . Go to https://vim-adventures.com/ (This is Vim Adventures- the first three (3) levels are free for anyone to play)
-. Go through the first three levels of Vim Adventures. This will give you a good feel how how to manuver in Vim. To continue past the third level, you have to pay $25.
-. Manuver to your Vim files. For example C:/Program Files(x86)/Vim/Vim80/tutor This should solidify the commands learned in Vim Adventures, and expand on them as well.
+. Go through the first three levels of Vim Adventures. This will give you a good feel how how to maneuver in Vim. To continue past the third level, you have to pay $25.
+. Maneuver to your Vim files. For example C:\Program Files(x86)\Vim\Vim80\tutor This should solidify the commands learned in Vim Adventures, and expand on them as well.
 . Work your way through the Vim tutor. Remember that you are not going through the tutor to just read, actually do the commands it is telling you to do. This will significantly help you learn Vim. 
- 
+. The image below shows the introduction to the Vim Tutor.
+
 +
-```
-sudo su
-```
-. Step four. Use the following syntax to include screenshots or other images.
-+
-image::blue-rectangle.png[]
-. Step five. Compile with the following command:
-+
-```
-asciidoctor-pdf tutorial.adoc
-```
+image::Vim Tutor Intro.PNG[]
+
+
 
 == Challenge
 
@@ -53,6 +46,6 @@ Open up a text file in Vim and attempt to edit it with the commands you know. Pl
 
 == Reflection
 
-Do you think that with your new knowladge of Vim, you will swap from using your current text editor to using vim?
+Do you think that with your new knowladge of Vim, you will swap from using your current text editor to using Vim?
 What are some of the advantages of using Vim other another text editor?
 Can you think of any flaws of Vim?
