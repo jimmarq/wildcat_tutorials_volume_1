@@ -65,11 +65,14 @@ image::without.png[]
 image::minus.png[]
 
 
+
+
+
 == Challenge: Combine Search Operators
 
 Google search operators can be combined and used in the same search.  Think of some creative ways to use these operators together to narrow your search.  A possible example can include:
-+
-image::combine.png[]
+
+image:combine.png[]
 
 == Reflection
 
