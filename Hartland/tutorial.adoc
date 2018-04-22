@@ -15,6 +15,11 @@ This tutorial will teach how to use Google search engine with search operators t
 
 All of this will be done through an internet browser.  Open the browser of your choice and start with Google's home page.  A search operator is a string or character used to narrow a search.  This section will walk you through some useful search operators on Google.
 
+. The 'site' search operator allows you to search a specific website for information.  Pick a random wesbite for this, and then pick a key word or phrase that would be useful to find on the website.
+```
+site:nmu.edu marijuana
+```
+
 . The 'inurl' search operator allows you to search for pages with a specific word or phrase in the url.  Choose a keyword to search with that could appear in a url. 
 +
 ```
@@ -41,20 +46,35 @@ This might help you find information on your company of choice, or even find sim
 +
 image::related.png[]
 
-. Step four. Use the following syntax to include screen
-shots or other images.
-+
-image::blue-rectangle.png[]
-. Step five. Compile with the following command:
+. The plus (+) and minus (-) symbols can also be used to further your searches.  The plus operator will search for results that specifically include the word(s) after the plus symbol. 
 +
 ```
-asciidoctor-pdf tutorial.adoc
+admin +login
 ```
++
+image::plus.png[]
+The minus operator will search for results that specifically do NOT include the word(s) after the minus symbol.
++
+```
+Marquette -University
+```
+See how the search results change without the specific removal of 'University'.
++
+image::without.png[]
++
+image::minus.png[]
 
-== Challenge
 
-Provide some meaningful ways for the learner to apply their knowledge in a new way.
+== Challenge: Combine Search Operators
+
+Google search operators can be combined and used in the same search.  Think of some creative ways to use these operators together to narrow your search.  A possible example can include:
++
+image::combine.png[]
 
 == Reflection
 
-Provide some thought questions that help the learner make sense of how the tutorial fits in the bigger picture.
+How would these search operators help you during information gathering?
+
+How can businesses use these search operators to better secure themselves?
+
+
