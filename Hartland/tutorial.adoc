@@ -16,6 +16,7 @@ This tutorial will teach how to use Google search engine with search operators t
 All of this will be done through an internet browser.  Open the browser of your choice and start with Google's home page.  A search operator is a string or character used to narrow a search.  This section will walk you through some useful search operators on Google.
 
 . The 'site' search operator allows you to search a specific website for information.  Pick a random wesbite for this, and then pick a key word or phrase that would be useful to find on the website.
++
 ```
 site:nmu.edu marijuana
 ```
