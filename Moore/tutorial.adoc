@@ -14,6 +14,9 @@ Author: Christopher Moore
 	* A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
 	* linux packages described later
 	* Audacity
+	* read http://www.radio-electronics.com/info/rf-technology-design/pm-phase-modulation/what-is-psk-phase-shift-keying-tutorial.php
+	** This includes documentation on basic binary booleans or peaks in signals
+	* Catch up on Wavelengths: https://en.wikipedia.org/wiki/Wavelength
 
 == cheat sheet
 
