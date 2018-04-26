@@ -52,6 +52,7 @@ To view the contents of hashes, and you should see something similiar to:
 image::Nano.png
 
 Using the entray for doug, lets break down the parts of the hash we're interested in for this tutorial.
+
 ```
 	doug:		is the user
 	$6$		is the prefix, in our case it tells us that its SHA-512
@@ -77,7 +78,6 @@ Your text file should now look like the other five lines.
 If this isn't done, hashcat won't reconize them as hashes.
 
 Control X to save, and yes to keep the changes.
-```
 
 . Get your wordlist
 
@@ -94,6 +94,7 @@ image::Crack_-_Start.png[]
 
 
 Breaking down the command.
+
 ```
 	-m 1800		our hash mode
 	-a 0		dictionary attack
