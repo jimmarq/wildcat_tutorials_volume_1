@@ -14,6 +14,9 @@ Author: Christopher Moore
 	* A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
 	* linux packages described later
 	* Audacity
+	* read http://www.radio-electronics.com/info/rf-technology-design/pm-phase-modulation/what-is-psk-phase-shift-keying-tutorial.php
+	** This includes documentation on basic binary booleans or peaks in signals
+	* Catch up on Wavelengths: https://en.wikipedia.org/wiki/Wavelength
 
 == cheat sheet
 
@@ -26,7 +29,7 @@ image::Electromagnetic-Waves.jpg[]
 Simple Radio
 ```
 
-image::radioSignals.gif[]
+image::radioSignals.png[]
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
@@ -96,9 +99,12 @@ image::Mobile.png[]
 +
 image::ffcwarning.png[]
 
-. Step four. Use the following syntax to include screenshots or other images.
-+
-image::blue-rectangle.png[]
+. Step four. Start gqrx
+* this program is for analyzing radio frequencies with a graphical view
+image::radioSignals.png
+.. Here you will select the device to pick up the radioSignals
+
+
 . Step five. Compile with the following command:
 +
 ```
