@@ -1,21 +1,21 @@
-= Electromagnetic wavelength penetration testing 
+= Simple Radio Frequency Pentration testing
 
 Author: Christopher Moore
 
 == Intro
-
-This tutorial will inform you of the many ways outside of conventional network administration of protecting a buisness or your personal assets. 
-Topics include. 
-. concepts of li-fi and electromagnetic communications.
-
-
+	* Hacking into every day devices through non-standardized network administration of various electromagnetic frequencies 
+	* There are many tutorials out there for RF modifications or Li-fi but this tutorial will just demonstrate the basics and definitions of whats going on for a noob.
 == Prerequisites
 
-The "*" is a bulleted list.
-
 * VirtualBox
-* Kali Virtual Machine
-
+* Kali Virtual Machine(recommended) Or Some other Linux distro
+* Choose one: YARD Stick One(cheapest), HackRF, or Ubertooth one, or RTL-SDL
+* A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
+==cheat sheet
+	```Full Spectrum```
+	image::Electromagnetic-Waves.jpg
+	```Simple Radio```
+	image::radioSignals.gif
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
