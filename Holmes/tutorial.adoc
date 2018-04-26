@@ -1,32 +1,30 @@
-= Tutorial Title Name
+= Tutorial Keybase
 
-Author: Your Name Here
+Author: Chris Holmes
 
 == Intro
 
-Describe the goals and purpose of the tutorial here.
+In this tutorial you will learn how to send encrypted files and messages with your computer or mobile phone.
 
 == Prerequisites
 
-The "*" is a bulleted list.
-
-* VirtualBox
-* Kali Virtual Machine
+* Computer or Android/iPhone
+* Email Account
 
 == Instructions
 
-Guide the person through the steps. Starting a line with a period is an automatically numbered list.
+. Download Keybase
+.. Computer Install
+... 1. Go to (https://keybase.io/download) in your web browser.
+... 2. Select your operating system under "Computers!".
+... 3. Run the executable and follow the guided installation
 
-. Step one.
-. Step two.
-. Step three. Use "+" and the  backtick character to add additional command.
+.. Android/iPhone Install
+... 1. Go to either the Google Play Store (Android) or Apple App Store (iPhone)
+... 2. Search for "Keybase" and select "Install". (see image below for Keybase icon)
 +
-```
-sudo su
-```
-. Step four. Use the following syntax to include screenshots or other images.
-+
-image::blue-rectangle.png[]
+image::keybase.png[]
+
 . Step five. Compile with the following command:
 +
 ```
