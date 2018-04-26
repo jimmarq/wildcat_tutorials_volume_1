@@ -5,7 +5,7 @@ Author: Christopher Moore
 == Intro
 
 This tutorial will inform you of the many ways outside of conventional network administration of protecting a buisness or your personal assets. 
-Topics include 
+Topics include. 
 . concepts of li-fi and electromagnetic communications.
 
 
