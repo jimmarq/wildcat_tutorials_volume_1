@@ -8,19 +8,21 @@ How to get hashes, analysize then, and how to perform a simpl dictionary attack 
 
 == Prerequisites
 
-.VirtualBox
-.Ubuntu Virtual Machine
-..Alternative: Kali Virtual Machine
-.Hashcat
+VirtualBox
+
+Ubuntu Virtual Machine
+
+Alternative: Kali Virtual Machine
+
+Hashcat
 
 == Instructions
-
-Guide the person through the steps. Starting a line with a period is an automatically numbered list.
 
 . Boot up your machine and create some users.
 
 image::Adduser.png[]
 
++
 . Install hashcat.
 
 image::Hashcat.png[]
@@ -29,7 +31,8 @@ Copy that line if your using Ubuntu.
 
 Kali should already have hashcat installed.
 
-. Step three.  Get your hashes from /etc/shadow
++
+. Get your hashes from /etc/shadow
 
 image::tail.png[]
 
@@ -43,23 +46,27 @@ To do this wee need to enter the following command.
 	
 This creates a text file containing the hashes in the current directory.
 
++
 . Dissecting the hashes
 
+```
 sudo nano hashes
+```
 
 To view the contents of hashes, and you should see something similiar to:
 
-image::Nano.png
+image::Nano.png[]
 
 Using the entray for doug, lets break down the parts of the hash we're interested in for this tutorial.
+
 ```
 	doug:		is the user
-	$6$		is the prefix, in our case it tells us that its SHA-512
+	$6$			is the prefix, in our case it tells us that its SHA-512
 	$z ... k$	is the salt
 	$d ... .	is the hashed text
 ```	
 
-
++
 . Edit your hashes
 
 Now we want to edit the hashes to look like the entries below the user doug.
@@ -77,41 +84,43 @@ Your text file should now look like the other five lines.
 If this isn't done, hashcat won't reconize them as hashes.
 
 Control X to save, and yes to keep the changes.
-```
 
++
 . Get your wordlist
 
 I recommend rockyou.txt from https://wiki.skullsecurity.org/Passwords, it contains a huge list of stolen credentials.
 
++
 . Cracking
 
 The following screenshots show you the necessary commands.
 
-
-image::Crack_-_Error.png[]
+image::Error.png[]
 
 image::Crack_-_Start.png[]
 
 
 Breaking down the command.
+
 ```
-	-m 1800		our hash mode
-	-a 0		dictionary attack
-	-o cracked.txt	output results to a file
-	--remove	removes the hash as its found
-	hahses		file with the hashes
-	dictionary.txt	the wordlist your using
-	--force		forces the cracking if you don't have native Intel OpenCL
+	-m 1800				our hash mode
+	-a 0				dictionary attack
+	-o cracked.txt		output results to a file
+	--remove			removes the hash as its found
+	hahses				file with the hashes
+	dictionary.txt		the wordlist your using
+	--force				forces the cracking if you don't have native Intel OpenCL
 ```
 
 Sit back at this point as it may take some time to finish, but it should like like the following screenshot when done.
 
 image::Crack_-_Results.png[]
 
++
 . View your results
 
 image::Nano_-_cracked.txt.png[]
-image::Nano_-_cracked.txt_-_Results[]
+image::Nano_-_cracked.txt_-_Results.png[]
 
 All that's left is to matched the cracked hashes to the users.
 
