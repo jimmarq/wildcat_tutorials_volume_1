@@ -11,6 +11,7 @@ How to get hashes, analysize then, and how to perform a simpl dictionary attack 
 * VirtualBox
 * Ubuntu Virtual Machine
 	* Alternative: Kali Virtual Machine
+* Hashcat
 
 == Instructions
 
