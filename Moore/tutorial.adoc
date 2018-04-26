@@ -35,7 +35,7 @@ Guide the person through the steps. Starting a line with a period is an automati
 
 * The thing to know is that you can go in depth how ever you feel but the only real background you need to know in basic radio hacking is Modulation
 	
-image::modulation.png2[]
+image::modulation.png2.png[]
 	
 * In this image we see basically fluctuations in signals, our goal is to capture those packets and replicate them.
 * This type of attack is known as replay attacks, which is the simpliest form and the hardest to accomplosh normally without some guide. It requires experimenting like a radio to tap into the frequency your looking for to channel out unwanted noise and focus only on the main target device wavelength.
