@@ -1,29 +1,101 @@
-= Tutorial Title Name
+= Simple Radio Frequency Pentration testing
 
 Author: Christopher Moore
 
 == Intro
-
-To do things 
+	* Hacking into every day devices through non-standardized network administration of various electromagnetic frequencies 
+	* There are many tutorials out there for RF modifications or Li-fi but this tutorial will just demonstrate the basics and definitions of whats going on for a noob.
 
 == Prerequisites
 
-The "*" is a bulleted list.
+	* VirtualBox
+	* Kali Virtual Machine(recommended) Or Some other Linux distro
+	* Choose one: YARD Stick One(cheapest), HackRF, or Ubertooth one, or RTL-SDL
+	* A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
+	* linux packages described later
+	* Audacity
 
-* VirtualBox
-* Kali Virtual Machine
+== cheat sheet
 
+```
+Full Spectrum
+```
+image::Electromagnetic-Waves.jpg[]
+
+```
+Simple Radio
+```
+
+image::radioSignals.gif[]
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
 
-. Step one.
+. Step one(Getting to know the wavelengths and modulation).
+
+* The thing to know is that you can go in depth how ever you feel but the only real background you need to know in basic radio hacking is Modulation
+	
+image::modulation.png2.png[]
+	
+* In this image we see basically fluctuations in signals, our goal is to capture those packets and replicate them.
+* This type of attack is known as replay attacks, which is the simpliest form and the hardest to accomplosh normally without some guide. It requires experimenting like a radio to tap into the frequency your looking for to channel out unwanted noise and focus only on the main target device wavelength.
+	
+image::modulation.png[]
+	
 . Step two.
-. Step three. Use "+" and the  backtick character to add additional command.
+.. what your going to need first is to run sudo apt-get update in your unix enviroment terminal
+.. next you will need to search either from a provide github software like:
 +
 ```
-sudo su
+hackerRF sweeper: https://github.com/pavsa/hackrf-spectrum-analyzer
+Linux (beta - only ubuntu tested):
+sudo apt install build-essential ant git libusb-1.0 libfftw3 libfftw3-dev openjdk-8-jdk
+git clone --depth=1 --recurse-submodules https://github.com/pavsa/hackrf-spectrum-analyzer.git
+cd hackrf-spectrum-analyzer/src/hackrf-sweep/
+make
+build/hackrf_sweep_spectrum_analyzer.sh 
 ```
++
+.. or GQRX-Reciever and Rfcat-transmitter
+.. this will also requiure Audacity
+	
+.. first install the add repository
++
+```
+sudo apt-get install software-properties-common python-software-properties
+```
+.. next install the software
++
+```
+sudo add-apt-repository -y ppa:bladerf/bladerf
+sudo add-apt-repository -y ppa:myriadrf/drivers
+sudo add-apt-repository -y ppa:myriadrf/gnuradio
+sudo add-apt-repository -y ppa:gqrx/gqrx-sdr
+sudo apt-get update
+```
++
+IMPORTANT: install in order as shown
+* next install the software
+```
+sudo apt-get install gqrx-sdr
+```
++
+.. Optional Suggested Ubuntu packages
+.. NOTE: This will take a couple of minutes 	
++
+```
+sudo apt-get install libvolk1-bin volk_profile
+```
+	
+. Step three. Find the frequencies listed on the FCC website
+.. http://fccid.io/ : This is a required list 
++
+image::Mobile.png[]
+.. Keep in mind the laws and rights listed on the side of your model, these contain rules on whether this would be considered jamming or not
+.. jaming is when you tamper with the connnection rate of radio or wifi waves across a public space, its considered a form of ddos
++
+image::ffcwarning.png[]
+
 . Step four. Use the following syntax to include screenshots or other images.
 +
 image::blue-rectangle.png[]

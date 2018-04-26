@@ -1,42 +1,84 @@
-= Tutorial Title Name
+= Refining Google Search for Information Gathering
 
 Author: Kayleigh Hartland
 
 == Intro
 
-Describe the goals and purpose of the tutorial here.
+This tutorial will teach how to use Google search engine with search operators to tailor results and find desired information easier and quicker than using the general search engine.  For the purpose of this tutorial, you will pick a company or website to practice these techniques on.
 
 == Prerequisites
 
-The "*" is a bulleted list.
-
-* VirtualBox
-* Kali Virtual Machine
+* Working Computer
+* Internet Connection
 
 == Instructions
 
-Guide the person through the steps. Starting a line with a period is an automatically numbered list.
+All of this will be done through an internet browser.  Open the browser of your choice and start with Google's home page.  A search operator is a string or character used to narrow a search.  This section will walk you through some useful search operators on Google.
 
-. Step one.
-. Step two.
-. Step three. Use "+" and the  backtick character to add additional command.
+. The 'site' search operator allows you to search a specific website for information.  Pick a random wesbite for this, and then pick a key word or phrase that would be useful to find on the website.
 +
 ```
-sudo su
-```
-. Step four. Use the following syntax to include screenshots or other images.
-+
-image::blue-rectangle.png[]
-. Step five. Compile with the following command:
-+
-```
-asciidoctor-pdf tutorial.adoc
+site:nmu.edu marijuana
 ```
 
-== Challenge
+. The 'inurl' search operator allows you to search for pages with a specific word or phrase in the url.  Choose a keyword to search with that could appear in a url. 
++
+```
+inurl: admin
+```
++
+image::inurl.png[]
+. If you are looking for certain documents on a company's website, you can use the 'Filetype' operator to narrow the search.  In this case, pick a random company or website and use this operator to search for a certain file type on their website.  Replace 'domainname' with your choice.  You may also choose another file type.
++
+```
+site:domainname.com filetype:pdf
+```
+You can narrow this further if needed.  adding '-inurl:name.pdf', you can narrow the search to remove any results that include the named document.  For example, searching the below will look for PDF documents on NMU's website, but not show any results that include a PDF with 'handbook.pdf' as part of the document name:
++
+```
+site:nmu.edu filetype:pdf -inurl:handbook.pdf
+```
+. You can search for related websites or content.  Using 'related' will search for websites related or similar to your searched website.  Pick a random website.
++
+```
+related:te.com
+```
+This might help you find information on your company of choice, or even find similar companies.
++
+image::related.png[]
 
-Provide some meaningful ways for the learner to apply their knowledge in a new way.
+. The plus (+) and minus (-) symbols can also be used to further your searches.  The plus operator will search for results that specifically include the word(s) after the plus symbol. 
++
+```
+admin +login
+```
++
+image::plus.png[]
+The minus operator will search for results that specifically do NOT include the word(s) after the minus symbol.
++
+```
+Marquette -University
+```
+See how the search results change without the specific removal of 'University'.
++
+image::without.png[]
++
+image::minus.png[]
+
+
+
+
+
+== Challenge: Combine Search Operators
+
+Google search operators can be combined and used in the same search.  Think of some creative ways to use these operators together to narrow your search.  A possible example can include:
+
+image:combine.png[]
 
 == Reflection
 
-Provide some thought questions that help the learner make sense of how the tutorial fits in the bigger picture.
+How would these search operators help you during information gathering?
+
+How can businesses use these search operators to better secure themselves?
+
+
