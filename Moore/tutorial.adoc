@@ -15,9 +15,9 @@ Author: Christopher Moore
 == cheat sheet
 
 	```Full Spectrum```
-
++
 image::Electromagnetic-Waves.jpg
-
+.
 	```Simple Radio```
 
 image::radioSignals.gif
