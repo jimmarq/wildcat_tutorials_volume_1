@@ -13,10 +13,13 @@ Author: Christopher Moore
 * A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
 
 == cheat sheet
-
++
 	```Full Spectrum```
++
 image::Electromagnetic-Waves.jpg
++
 	```Simple Radio```
++
 image::radioSignals.gif
 == Instructions
 
