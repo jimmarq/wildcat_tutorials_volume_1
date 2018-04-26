@@ -1,1 +1,1 @@
-asciidoctor-pdf -a pdf-style=practical-theme.yml "Practical Network Security Exercises.adoc"
+asciidoctor-pdf "Wildcat_Tutorials_Volume_1.adoc"
