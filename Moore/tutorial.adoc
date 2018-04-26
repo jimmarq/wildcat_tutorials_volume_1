@@ -15,12 +15,12 @@ Author: Christopher Moore
 == cheat sheet
 
 	```Full Spectrum```
-+
-image::Electromagnetic-Waves.jpg
-.
+
+image::Electromagnetic-Waves.jpg[]
+
 	```Simple Radio```
 
-image::radioSignals.gif
+image::radioSignals.gif[]
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
