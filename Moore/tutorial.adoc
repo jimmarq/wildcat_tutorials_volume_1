@@ -43,42 +43,49 @@ Guide the person through the steps. Starting a line with a period is an automati
 	image::[]
 	
 . Step two.
-	* what your going to need first is to run sudo apt-get update in your unix enviroment terminal
-	* next you will need to search either from a provide github software like:
-		+
-		```
-		hackerRF sweeper https://github.com/pavsa/hackrf-spectrum-analyzer
-		Linux (beta - only ubuntu tested):
-		sudo apt install build-essential ant git libusb-1.0 libfftw3 libfftw3-dev openjdk-8-jdk
-		git clone --depth=1 --recurse-submodules https://github.com/pavsa/hackrf-spectrum-analyzer.git
-		cd hackrf-spectrum-analyzer/src/hackrf-sweep/
-		make
-		build/hackrf_sweep_spectrum_analyzer.sh 
-		```
-		+
-	* or GQRX-Reciever and Rfcat-transmitter
-	* this will also requiure Audacity
-	+
-	```
-	sudo add-apt-repository -y ppa:bladerf/bladerf
-	sudo add-apt-repository -y ppa:myriadrf/drivers
-	sudo add-apt-repository -y ppa:myriadrf/gnuradio
-	sudo add-apt-repository -y ppa:gqrx/gqrx-sdr
-	sudo apt-get update
-	```
-	+
-	IMPORTANT: install in order as shown
-	* next install the software
-	+
-	```
-	sudo apt-get install gqrx-sdr
-	```
-	+
-	* Optional Suggested Ubuntu packages	
-	+
-	```
-	sudo apt-get install libvolk1-bin volk_profile
-	```
+.. what your going to need first is to run sudo apt-get update in your unix enviroment terminal
+.. next you will need to search either from a provide github software like:
++
+```
+hackerRF sweeper: https://github.com/pavsa/hackrf-spectrum-analyzer
+Linux (beta - only ubuntu tested):
+sudo apt install build-essential ant git libusb-1.0 libfftw3 libfftw3-dev openjdk-8-jdk
+git clone --depth=1 --recurse-submodules https://github.com/pavsa/hackrf-spectrum-analyzer.git
+cd hackrf-spectrum-analyzer/src/hackrf-sweep/
+make
+build/hackrf_sweep_spectrum_analyzer.sh 
+```
++
+.. or GQRX-Reciever and Rfcat-transmitter
+.. this will also requiure Audacity
+	
+.. first install the add repository
++
+```
+sudo apt-get install software-properties-common python-software-properties
+```
+.. next install the software
++
+```
+sudo add-apt-repository -y ppa:bladerf/bladerf
+sudo add-apt-repository -y ppa:myriadrf/drivers
+sudo add-apt-repository -y ppa:myriadrf/gnuradio
+sudo add-apt-repository -y ppa:gqrx/gqrx-sdr
+sudo apt-get update
+```
++
+IMPORTANT: install in order as shown
+* next install the software
++
+```
+sudo apt-get install gqrx-sdr
+```
++
+.. Optional Suggested Ubuntu packages	
++
+```
+sudo apt-get install libvolk1-bin volk_profile
+```
 	
 . Step three. Use "+" and the  backtick character to add additional command.
 +
