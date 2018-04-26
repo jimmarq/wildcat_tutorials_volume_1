@@ -11,11 +11,13 @@ Author: Christopher Moore
 * Kali Virtual Machine(recommended) Or Some other Linux distro
 * Choose one: YARD Stick One(cheapest), HackRF, or Ubertooth one, or RTL-SDL
 * A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
-==cheat sheet
+
+== cheat sheet
+
 	```Full Spectrum```
-	image::Electromagnetic-Waves.jpg
+image::Electromagnetic-Waves.jpg
 	```Simple Radio```
-	image::radioSignals.gif
+image::radioSignals.gif
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
