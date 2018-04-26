@@ -14,6 +14,9 @@ Author: Christopher Moore
 	* A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
 	* linux packages described later
 	* Audacity
+	* read http://www.radio-electronics.com/info/rf-technology-design/pm-phase-modulation/what-is-psk-phase-shift-keying-tutorial.php
+	** This includes documentation on basic binary booleans or peaks in signals
+	* Catch up on Wavelengths: https://en.wikipedia.org/wiki/Wavelength
 
 == cheat sheet
 
@@ -26,21 +29,21 @@ image::Electromagnetic-Waves.jpg[]
 Simple Radio
 ```
 
-image::radioSignals.gif[]
+image::radioSignals.png[]
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
 
 . Step one(Getting to know the wavelengths and modulation).
 
-	* The thing to know is that you can go in depth how ever you feel but the only real background you need to know in basic radio hacking is Modulation
+* The thing to know is that you can go in depth how ever you feel but the only real background you need to know in basic radio hacking is Modulation
 	
-	image::[]
+image::modulation.png2.png[]
 	
-	* In this image we see basically fluctuations in signals, our goal is to capture those packets and replicate them.
-	* This type of attack is known as replay attacks, which is the simpliest form and the hardest to accomplosh normally without some guide. It requires experimenting like a radio to tap into the frequency your looking for to channel out unwanted noise and focus only on the main target device wavelength.
+* In this image we see basically fluctuations in signals, our goal is to capture those packets and replicate them.
+* This type of attack is known as replay attacks, which is the simpliest form and the hardest to accomplosh normally without some guide. It requires experimenting like a radio to tap into the frequency your looking for to channel out unwanted noise and focus only on the main target device wavelength.
 	
-	image::[]
+image::modulation.png[]
 	
 . Step two.
 .. what your going to need first is to run sudo apt-get update in your unix enviroment terminal
@@ -76,25 +79,32 @@ sudo apt-get update
 +
 IMPORTANT: install in order as shown
 * next install the software
-+
 ```
 sudo apt-get install gqrx-sdr
 ```
 +
-.. Optional Suggested Ubuntu packages	
+.. Optional Suggested Ubuntu packages
+.. NOTE: This will take a couple of minutes 	
 +
 ```
 sudo apt-get install libvolk1-bin volk_profile
 ```
 	
-. Step three. Use "+" and the  backtick character to add additional command.
+. Step three. Find the frequencies listed on the FCC website
+.. http://fccid.io/ : This is a required list 
 +
-```
-sudo su
-```
-. Step four. Use the following syntax to include screenshots or other images.
+image::Mobile.png[]
+.. Keep in mind the laws and rights listed on the side of your model, these contain rules on whether this would be considered jamming or not
+.. jaming is when you tamper with the connnection rate of radio or wifi waves across a public space, its considered a form of ddos
 +
-image::blue-rectangle.png[]
+image::ffcwarning.png[]
+
+. Step four. Start gqrx
+* this program is for analyzing radio frequencies with a graphical view
+image::radioSignals.png
+.. Here you will select the device to pick up the radioSignals
+
+
 . Step five. Compile with the following command:
 +
 ```

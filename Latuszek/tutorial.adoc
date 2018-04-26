@@ -1,42 +1,177 @@
-= Tutorial Title Name
+= Creating your first ever website!
 
 Author: Matthew Latuszek
 
 == Intro
 
-we got a whole lotta goals to write about.
+Creating a webpage is simple enough for anyone to get creating very quickly.
+By using tags, attributes and stylings your imagination is the limit!
 
 == Prerequisites
 
-The "*" is a bulleted list.
+* An Internet Browser
+* Your favorite text editor (Sublime Text 3 Recommended)
 
-* VirtualBox
-* Kali Virtual Machine
+== Setup
 
-== Instructions
+Let's get started!
 
-Guide the person through the steps. Starting a line with a period is an automatically numbered list.
+. Create a folder for your learning, and create a text file in it. This can be named anything as long as it has a '.html' extension, though the general convention is to name your homepage 'index.html'.
+. Create a file called 'styles.css' inside the folder as well, this is where we will make our website pretty!
+. Open the '.html' file in your editor. Now the learning begins!
+. Copy and paste this skeleton into your file.
 
-. Step one.
-. Step two.
-. Step three. Use "+" and the  backtick character to add additional command.
-+
 ```
-sudo su
+<!-- The browser doesn't care about the stuff in these cool lines, this is a comment! -->
+<html> <!-- This here is a tag! Tags look like <this> and there are lots of them! They all do different stuff. -->
+  <head> <!-- Our <head> contains all the setup stuff for our site, title, meta data... -->
+    <title>My site!</title>
+  </head> <!-- Later we will put stylings right ^^^ here! -->
+
+  <body> <!-- <body> is a very important tag, this is where all the meat of the site will go!
+
+  </body> <!-- Right in here we will be adding a <div> tag and a <p> tag, we'll learn how to do that next.
+</html>
 ```
-. Step four. Use the following syntax to include screenshots or other images.
-+
-image::blue-rectangle.png[]
-. Step five. Compile with the following command:
-+
+== Tags
+
+Let's talk about a few tags that are essential to web dev, as well as dissect a tag.
+
+A tag has some important parts, the tag itself, its attributes, it's content, and it's end tag.
+\/ Tag  \/ - Attributes - \/         \/ Content         \/ End of Tag
+<div class="stretchFull" id="header">Wow this is a div!</div>
+
+Some attributes are specific to a certain tag or type of tag.
+- An <a> tag always has an 'href' attribute, which is where the tag links to.
+--- ie. <a href="resources.html">Resources</a>
+--- This will create a hyperlink with the text 'Resources'. Cool!
+
+Some attributes are universal, and work on every tag.
+- class
+- id
+- style
+
+These are all attributes used for CSS. (Styling)
+
+So what are the tags we'll use today?
+
+. <div>"STUFFINHERE"</div> --- This tag is a 'divider' tag, it separates the different parts of our page.
+- <p>"STUFFINHERE"</p> --- This tag is a 'paragraph', the most general tag for text.
+- <h1>"STUFFINHERE"</h1> --- This is a header tag, there are actually 6, h1-h6, h stands for header, the numbers are different sizes, h1 being largest.
+
+Not too bad hm?
+
+== Editing the Site
+
+Stick this in your head, this way we have a link to our styles.
+
 ```
-asciidoctor-pdf tutorial.adoc
+<link rel="stylesheet" type="text/css" href="styles.css"></link>
 ```
+
+Now inside your body, add a div tag.
+```
+<body>
+  <div>
+
+  </div>
+</body>
+```
+
+Then add a header and paragraph inside that div!
+```
+<body>
+  <div>
+    <h1>This is my Site!</h1>
+    <p>Here I can tell you all about it!</p>
+  </div>
+</body>
+```
+
+Check out your site so far by right clicking the .html file and 'open with' a internet browser, it should look pretty bland at this point but hey! That's stuff!
+
+== Styling
+
+Now let's customize this a little bit! This starts with some learning.
+
+So remember those attributes from before? (id, class, style)
+Let's learn what those mean!
+
+- An id is used for styling something unique. Use these if it's the only thing you want styled that way on the page.
+- A class allows you to style multiple elements using the same definitions. IE. class='red' on anything I want red. You can define multiple classes on a single tag.
+- The 'style' attribute allows you to inline your styles, these are the last thing the browser checks, so styles put here won't be overridden.
+
+So let's put an id of "intro" on our div, and then a class called "underline" on our h1.
+```
+<body>
+  <div id="intro">
+    <h1 class="underline">This is my Site!</h1>
+    <p>Here I can tell you all about it!</p>
+  </div>
+</body>
+```
+
+Now let's go do something with this stuff. Open 'styles.css' and be ready to learn!
+
+To style every single of a type of tag, you can define that using just the tags name.
+
+```
+div {
+  margin: 0;
+  padding: 0;
+}
+```
+
+To style an id, you use the name of the id attribute you set for the tag, with a '#' in front of it.
+
+```
+#header {
+  height: 12vh;
+  width: 100vw;
+}
+```
+
+Lastly, a class is styled the same way as an id, but with a '.' in front of it.
+
+```
+.sticky {
+  position: fixed;
+  top: 0px;
+}
+```
+
+So lets style some stuff!
+
+```
+#intro {
+  background-color: blue;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+p {
+  color: white;
+}
+
+```
+
+I recommend typing this in yourself as it'll help you learn and isn't much. Check out what this stuff does to your site!
+Cool!!!
 
 == Challenge
 
-Provide some meaningful ways for the learner to apply their knowledge in a new way.
+Try making a navbar, or a bigger site, with more pages.
+
+There are many tutorials online for everything web development, especially intro level stuff.
+UTILIE GOOGLE, you wanna know how to make these things go side by side? Google.
+You wanna make a navbar? Google.
+Forgot how to make a hyperlink? Google.
+
+Seriously, you can take this as far as you want. Google will take you there!
 
 == Reflection
 
-Provide some thought questions that help the learner make sense of how the tutorial fits in the bigger picture.
+You've just learned skills that put you ahead of the curve on HTML, pretty cool! The bigger picture here is that
+this is what every web developer is currently doing. Googling and fiddling all day, we aren't super humans. That's Googles' job!
