@@ -55,7 +55,7 @@ These are all attributes used for CSS. (Styling)
 
 So what are the tags we'll use today?
 
-. <div>"STUFFINHERE"</div> --- This tag is a 'divider' tag, it separates the different parts of our page.
+- <div>"STUFFINHERE"</div> --- This tag is a 'divider' tag, it separates the different parts of our page.
 - <p>"STUFFINHERE"</p> --- This tag is a 'paragraph', the most general tag for text.
 - <h1>"STUFFINHERE"</h1> --- This is a header tag, there are actually 6, h1-h6, h stands for header, the numbers are different sizes, h1 being largest.
 
@@ -165,11 +165,11 @@ Cool!!!
 Try making a navbar, or a bigger site, with more pages.
 
 There are many tutorials online for everything web development, especially intro level stuff.
-UTILIE GOOGLE, you wanna know how to make these things go side by side? Google.
+UTILIZE GOOGLE, you wanna know how to make these things go side by side? Google.
 You wanna make a navbar? Google.
 Forgot how to make a hyperlink? Google.
 
-Seriously, you can take this as far as you want. Google will take you there!
+Seriously, you can take this as far as you want. Google will be your guide!
 
 == Reflection
 
