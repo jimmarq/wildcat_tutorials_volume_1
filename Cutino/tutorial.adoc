@@ -1,42 +1,68 @@
-= Tutorial Title Name
+= Aws Amazon- Store and Retrieve a File.
 
-Author: Your Name Here
+Author: Joe Cutino
 
-== Intro
+== In this tutorial you will learn about the basics being able to create a file through a cloud service that you can are able to access from any system.
 
 Describe the goals and purpose of the tutorial here.
 
-== Prerequisites
+== Prerequisites- What you will need is to make an account on aws.amazon.com to get started.
+
+== These will be the items you will need to complete the task.
 
 The "*" is a bulleted list.
 
-* VirtualBox
-* Kali Virtual Machine
+* Internet access
+* Computer
 
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
 
 . Step one.
+
+== log in to your account go through the tutorial to get familar with the services that can be offered.
+
 . Step two.
-. Step three. Use "+" and the  backtick character to add additional command.
-+
-```
-sudo su
-```
-. Step four. Use the following syntax to include screenshots or other images.
-+
-image::blue-rectangle.png[]
-. Step five. Compile with the following command:
-+
-```
-asciidoctor-pdf tutorial.adoc
-```
+
+== create an S3 Bucket. creating this bucket you will be able to make this your container for the files that will be stored later on.
+
+. Step three. 
+
+== you will have to add the region you will be using for the project. Next, Add a name that will be used, as a side note the names can not be dublicated so make a unquie name to be abe to continue ahead.
+
+. Step three.
+
+== the next screen will ask if versioning, server access logging, tags, objects-level logging, and default encryption.
+
+. Step four. 
+
+== your almost done, when your creating the bucket you will be asked if read, write, and permissions can be accessed or not. For this assignment lets make it default by not changing anything. later on if wanting to make changes your more then welcome to do that to see what the settings will allow and not allow to access.
+
+. Step five. 
+
+== once the bucket is created upload a file to the server to see what happens.
+
+. Step six.
+
+== Once uploaded challenge others to get access to the files and as the uploader only allow a select few to read or write or both. see what can be accessed fromed you or not. 
+
+
+
+
+
+
 
 == Challenge
+. Change the properties and see what each enabled task can do to make sure the files are secured and/or encrytped. 
 
-Provide some meaningful ways for the learner to apply their knowledge in a new way.
+. Challenge your self to see if the read and write is able to be changed and what benefits it can use later on.
+
 
 == Reflection
 
-Provide some thought questions that help the learner make sense of how the tutorial fits in the bigger picture.
+. With what you have expereniced going through the properties what things are you able to note that can be worth having for the future and what can be changed to make files more secured?
+
+. What are some ways that can be changed to make this assignment more functionally fun?
+
+. What are a few key notes that are needed to help others figuring out what this cloud service can do for a business?

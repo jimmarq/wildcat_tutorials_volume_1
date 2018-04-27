@@ -14,6 +14,9 @@ Author: Christopher Moore
 	* A device within the range of non-lethal wavelength(i.e cell phone, radio, car) 
 	* linux packages described later
 	* Audacity
+	* read http://www.radio-electronics.com/info/rf-technology-design/pm-phase-modulation/what-is-psk-phase-shift-keying-tutorial.php
+	** This includes documentation on basic binary booleans or peaks in signals
+	* Catch up on Wavelengths: https://en.wikipedia.org/wiki/Wavelength
 
 == cheat sheet
 
@@ -22,11 +25,7 @@ Full Spectrum
 ```
 image::Electromagnetic-Waves.jpg[]
 
-```
-Simple Radio
-```
 
-image::radioSignals.gif[]
 == Instructions
 
 Guide the person through the steps. Starting a line with a period is an automatically numbered list.
@@ -35,12 +34,10 @@ Guide the person through the steps. Starting a line with a period is an automati
 
 * The thing to know is that you can go in depth how ever you feel but the only real background you need to know in basic radio hacking is Modulation
 	
-image::modulation.png2.png[]
+image::BinaryPhaseKeyShifting.png[]
 	
 * In this image we see basically fluctuations in signals, our goal is to capture those packets and replicate them.
 * This type of attack is known as replay attacks, which is the simpliest form and the hardest to accomplosh normally without some guide. It requires experimenting like a radio to tap into the frequency your looking for to channel out unwanted noise and focus only on the main target device wavelength.
-	
-image::modulation.png[]
 	
 . Step two.
 .. what your going to need first is to run sudo apt-get update in your unix enviroment terminal
@@ -96,9 +93,17 @@ image::Mobile.png[]
 +
 image::ffcwarning.png[]
 
-. Step four. Use the following syntax to include screenshots or other images.
+. Step four. Start gqrx
+* this program is for analyzing radio frequencies with a graphical view
 +
-image::blue-rectangle.png[]
+```
+gqrx
+```
++
+image::radioDevices.png[]
+.. Here you will select the device to pick up the radioSignals
+
+
 . Step five. Compile with the following command:
 +
 ```
