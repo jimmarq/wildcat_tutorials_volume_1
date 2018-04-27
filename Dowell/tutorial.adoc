@@ -1,47 +1,99 @@
-= Em Dawg's Super Mega Uber Guten Awesome Galactic Mega Nerd Wearing Glasses Use of CMD Prompt Netstat Tutorial.
+= Netstat Tutorial
+By: Emerson Dowell
 
-Author: The Coolest Person in the Milky Way.
+== KAHHMAAYYHAAAA image:explosion.png[] INTRO
 
-== Intro
+Okay for this tutorial we are going to learn about how to monitor your traffic to an extent and check open/closed ports using the 'netstat' command inside of CMD -or- Powershell.
 
-What's up my people. In this tutorial we are going to not only blow you mind. Like BOOOOOM.
-+
-image::explosion.png[]
-+
-<(O_o)>
-Boom. See that. That's your mind being blown by this tutorial. Just preparing you because its going to happen as we explore the awesomeSauceNessOfSuperMegaCMDPromptNetstatCommand.
+[quote, Computer Hope's Free Computer Help, www.computerhope.com/netstat.htm]
+____
+*Quote* The netstat command is used to display the TCP/IP network protocol statistics and information.
+____
+
+.Netstat Commands
+* [-a] Connections & Listening Ports
+* [-b] Executables involved in creating connections or listening ports.
+* [-e] Ethernet Statistics
+* [-f] Fully Qualified Domain Names
+* [-n] Addresses and ports numerically
+* [-o] Process ID's associated with connections
+* [-p][-IP,-IPv6,-ICMP,-ICMPv6,-TCP,-TCPv6,-UDP or -UDPv6] Shows connections for the protocol given. May be combined with -s
+* [-r] Displays Routing Table
+* [-s] Shows per-protocol statistics; May be combined with -p
+* [-t] Displays current offload state
+* [-x] NetworkDirect Connection Information
+* [-y] TCP template for all connections
+* [0-#] You may append any whole number to the end of a finished to have that command reapeat every # seconds.
 
 == Prerequisites
 
-The "*" is a bulleted list.
-
-* VirtualBox
-* Kali Virtual Machine
+1. A nintendo powerglove
+2. A hand
+3. A skateboard
+4. Glasses
+5. A can of awesome
+6. Windows Operating System
 
 == Instructions
 
-Guide the person through the steps. Starting a line with a period is an automatically numbered list.
+IMPORTANT: Ollie in with your skateboard. Equip your powerglove by pulling it onto your hand with vengeance. Press buttons. Do a striking pose into the camera and very slightly adjust your glasses right before taking your can of awesome, cracking it open and taking a sip. Then say 'Delicous'.
 
-. Step one.
-. Step two.
-. Step three. Use "+" and the  backtick character to add additional command.
-+
-```
-sudo su
-```
-. Step four. Use the following syntax to include screenshots or other images.
-+
-image::blue-rectangle.png[]
-. Step five. Compile with the following command:
-+
-```
-asciidoctor-pdf tutorial.adoc
-```
+=== Step 1: Press WIN + R.
+
+NOTE: This is the key combination to open RUN where you can type in program names or CMD / Powershell commands on the fly.
+
+=== Step 2: Type *powershell* -or- *cmd*, press enter.
+NOTE: This will open a Command Line Interface to interact with which we will be using for the rest of this tutorial. You can press ctrl+c at any time while a command is running to cancel it and get input functionality again.
+
+=== Step 3: Type *netstat*
+TIP: Displays all the current connections.
+
+image:netstat_01.png[]
+
+=== Step 4: *netstat -a* 
+TIP: Displays all the connections and listening ports.
+
+image:netstat_02.png[]
+
+=== Step 5: *netstat -e 1*
+TIP: Displays ethernet statistics and will refresh every 1 second.
+
+image:netstat_07.png[]
+
+=== Step 6: *netstat -s* 
+TIP: Shows all of the connections pertaining to TCP, UDP, TCPv6 or UDPv6.
+
+image:netstat_04.png[]
+
+=== Step 7: *netstat -p TCP* 
+TIP: Shows all of the connection pertaining to TCP. You may replace 'TCP' with IP, IPv6, ICMP, ICMPv6, TCPv6, UDP, or UDPv6.
+
+image:netstat_05.png[]
+
+=== Step 8: *netstat -r*
+TIP: Shows the routing table.
+
+image:netstat_06.png[]
+
+=== Step 9: *netstat -e -s*
+TIP: This will display ethernet statistics for ALL ports.
+NOTE: This is an example of how you may append multiple (-) commands to the netstat command.
+
+image:netstat_08.png[]
+
+Well by now you should be pretty used to netstat & the information it shows you. I hope you found this tutorial helpful and *The Last Jedi is the worst movie ever made IMO*.!
+----
+Netstat comes with many different letters / letters you can append to the end of the command. NETSTAT [-a] [-b] [-e] [-f] [-n] [-o] [-p proto] [-r] [-s] [-x] [-t] [interval]
+----
 
 == Challenge
 
-Provide some meaningful ways for the learner to apply their knowledge in a new way.
+Apply what you have learned to make a quick and easy powershell script to monitor your network!
 
 == Reflection
 
-Provide some thought questions that help the learner make sense of how the tutorial fits in the bigger picture.
+What type's of conditions could you make use of netstat?
+
+Would netstat be useful to troubleshoot programatic networking issues?
+
+Would netstat be effective to spot any unwanted / malicous connections on your network?
