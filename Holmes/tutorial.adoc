@@ -5,36 +5,64 @@ Author: Chris Holmes
 == Intro
 
 In this tutorial you will learn how to send encrypted files and messages with your computer or mobile phone.
+(note: Keybase is currently in beta for mobile, so not all PC features are available)
+
+== Welcome
+
+"Keybase is a new and free security app for mobile phones and computers
+For the geeks among us: it's open source and powered by public-key cryptography." - Keybase
+
+"Keybase is for anyone. Imagine a Slack for the whole world, except end-to-end encrypted across all your devices.
+Or a Team Dropbox where the server can't leak your files or be hacked." - Keybase
 
 == Prerequisites
 
 * Computer or Android/iPhone
 * Email Account
 
-== Instructions
+== Installation Instructions
 
 . Download Keybase
-.. Computer Install
-... 1. Go to (https://keybase.io/download) in your web browser.
-... 2. Select your operating system under "Computers!".
-... 3. Run the executable and follow the guided installation
+.. Computer
+... Go to (https://keybase.io/download) in your web browser.
+... Select your operating system under "Computers!" to download the executable.
+... Run the executable and follow the guided installation
 
-.. Android/iPhone Install
-... 1. Go to either the Google Play Store (Android) or Apple App Store (iPhone)
-... 2. Search for "Keybase" and select "Install". (see image below for Keybase icon)
+.. Android/iPhone
+... Go to either the Google Play Store (Android) or Apple App Store (iPhone)
+... Search for "Keybase" and select "Install". 
+..... (see image below for Keybase icon)
 +
 image::keybase.png[]
 
-. Step five. Compile with the following command:
-+
-```
-asciidoctor-pdf tutorial.adoc
-```
+== Navigation
+* People - Search for friends, Edit your profile, Prove your identity to increase security, Top users to follow
+* Chat - Instant messaging that supports attachments and emoji's. Quick link for shared folder.
+* Folders - Create folders for private, public or team use.
+* Teams - Create or join a team to aid collaboration.
+* Devices - List of your trusted and revoked devices.
+* Git - Create a encrypted git repository for personal or team use.
+* Settings - Change Keybase settings including, Your account, Invitations, Notifications, Advanced, Delete me and Sign out.
 
-== Challenge
+== Send Encrypted Message
 
-Provide some meaningful ways for the learner to apply their knowledge in a new way.
+. Click the "Chat" tab.
+. Select the edit document icon to start a new conversation.
+. In the chat window, select the Filter to define which platform to search on.
+. Type the name or username of the person in which you would like to chat with.
+. Start typing message under "Write a message".
+. Attachments can be added using the paper-clip icon and emoji's with the smilie-face icon.
+
+== Challenge: Send Encrypted Files
+
+. Click on the "Folders" tab.
+. Select "Display in Explorer".
+. Accept the license terms and conditions. Click "Install" (may require administrative priveleges).
+. Back under the "Folders" tab, Select either private or team under the folder options.
+. After creating the folder, goto File Explorer > This PC. A new shared drive will appear.
+. Any files placed in the shared folder will populate in your friends shared folder.
 
 == Reflection
 
-Provide some thought questions that help the learner make sense of how the tutorial fits in the bigger picture.
+1. Emails sent from email client (ex. Gmail to Gmail) will have server to server encryption. An email sent from (ex. Gmail to Hotmail) will reside in plain text on the recipients email server. Can programs like Keybase help protect sensitive data?
+2. Sending large files is not possible through email. By using an end-to-end encryption app such as Keybase, large files can be shared with the added benefit of end-to-end over server-to-server encryption. Can you trust (ex. Gmail) platforms to not use your data?
