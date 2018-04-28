@@ -1,10 +1,10 @@
-= Dictionary Attack With Hashcat
+= Dictionary Attack with Hashcat
 
 Author: Nick Bordine
 
 == Intro
 
-How to get hashes, analysize then, and how to perform a simpl dictionary attack using hashcat to crack them.
+How to get hashes, analyze then, and how to perform a simple dictionary attack using hashcat to crack them.
 
 == Prerequisites
 
@@ -26,7 +26,7 @@ image::Adduser.png[]
 +
 image::Hashcat.png[]
 +
-Copy that line if your using Ubuntu.
+Copy that line if you are using Ubuntu.
 +
 Kali should already have hashcat installed.
 
@@ -54,11 +54,11 @@ To view the contents of your hash file:
 sudo nano hashes
 ```
 +
-You should see something similiar to:
+You should see something similar to:
 +
 image::Nano.png[]
 +
-Using the entry for doug, lets break down the parts of the hash we're interested in for this tutorial.
+Using the entry for doug, let’s break down the parts of the hash we're interested in for this tutorial.
 +
 ```
 	doug:		is the user
@@ -73,15 +73,15 @@ Now we want to edit the hashes to look like the entries below the user doug.
 +
 image::Nano_-_Edit.png[]
 +
-Now you need to be careful on what you are deleteing.
+Now you need to be careful on what you are deleting.
 +
 Using the image above, delete user:, or the characters up to the first $.
 +
-The second part that needs to be deleted is at the end, statring at the first : and to the last : on the line.
+The second part that needs to be deleted is at the end, starting at the first : and to the last : on the line.
 +
 Your text file should now look like the other five lines.
 +
-If this isn't done, hashcat won't reconize them as hashes.
+If this isn't done, hashcat will not recognize them as hashes.
 +
 Control X to save, and yes to keep the changes.
 
@@ -104,12 +104,12 @@ Breaking down the command.
 	-a 0				dictionary attack
 	-o cracked.txt		output results to a file
 	--remove			removes the hash as its found
-	hahses				file with the hashes
+	hashes				file with the hashes
 	dictionary.txt		the wordlist your using
 	--force				forces if you don't have native Intel OpenCL
 ```
 +
-Sit back at this point as it may take some time to finish, but it should like like the following screenshot when done.
+Sit back at this point as it may take some time to finish, but it should like the following screenshot when done.
 +
 image::Crack_-_Results.png[]
 
