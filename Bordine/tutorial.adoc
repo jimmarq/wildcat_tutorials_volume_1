@@ -58,7 +58,7 @@ You should see something similar to:
 +
 image::Nano.png[]
 +
-Using the entry for doug, let’s break down the parts of the hash we're interested in for this tutorial.
+Using the entry for doug, let's break down the parts of the hash we're interested in for this tutorial.
 +
 ```
 	doug:		is the user

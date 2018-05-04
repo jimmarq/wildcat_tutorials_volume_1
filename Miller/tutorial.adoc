@@ -34,7 +34,7 @@ Learning Vim can take as long or as short as you want it to take. There are peop
 . The image below shows the introduction to the Vim Tutor.
 
 +
-image::Vim Tutor Intro.PNG[]
+image::Vim_Tutor_Intro.PNG[]
 
 
 
